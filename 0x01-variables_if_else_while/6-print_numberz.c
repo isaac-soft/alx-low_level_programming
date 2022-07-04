@@ -3,7 +3,7 @@
   * main -main block
   * Description: prints all single digit nubers of base 10
   * starting from 0, foloowed y a new line.
-  * REturn: 0
+  * Return: 0
   */
 int main(void)
 {
