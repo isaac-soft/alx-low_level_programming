@@ -1,7 +1,7 @@
 /**
   * main -Prints size of characters
   *
-  * Return - Always 0 (success)
+  * Return: - Always 0 (success)
 **/
 
 #include <stdio.h>
