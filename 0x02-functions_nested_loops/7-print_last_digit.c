@@ -1,28 +1,20 @@
+#include <stdlib.h>
 #include "main.h"
-
 /**
- * print_last_digit - Prints the last digit
- * of a number.
+ * print_last_digit - prints last digit
+ * Description - Use absolute function to make checkeasy
+ * @c: accepts the arguments to be checked
  *
- * @n: ininput nmber as an integer
- *
- * Return: last digit.
+ * Return: Returns the last digit
  */
 
-int print_last_digit(int n)
+int print_last_digit(int c)
 {
 	int r;
 
-	if (n < 0)
-	{
-		r = -1 * (n % 10);
-		_putchar(r + '0');
-		return (r);
-	}
-	else
-	{
-		r = n % 10;
-		_putchar(r + '0');
-		return (r);
-	}
+	r = abs(c);
+	r = r % 10;
+	_putchar(r + '0');
+
+	return (r);
 }
