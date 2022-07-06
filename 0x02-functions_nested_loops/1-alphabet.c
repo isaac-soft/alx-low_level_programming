@@ -1,4 +1,4 @@
-include "main.h"
+#include "main.h"
 
 /**
  * print_alphabet - Printall the lower case alphabets
@@ -17,5 +17,6 @@ void print_alphabet(void)
 		c++;
 	}
 	putchar('\n');
+
 	return (0);
 }
