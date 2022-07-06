@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * isalpha -Checks for alphabetic character 
+ * _isalpha -Checks for alphabetic character
  * Descritpion: This program will check if a letter is
  * an alphabet either lowercase or uppercase
  * @c: this parameter handles the argument from main.c
