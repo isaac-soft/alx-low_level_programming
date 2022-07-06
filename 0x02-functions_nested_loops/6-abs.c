@@ -3,12 +3,12 @@
 
 /**
  * _abs - checks for the absolute value
- * @int: accepts int arguments
+ * @c: accepts int arguments
  *
  * Return: returns the absolute value on exit
  */
 
-int _abs(int)
+int _abs(int c)
 {
-	return (abs(int));
+	return (abs(int c));
 }
