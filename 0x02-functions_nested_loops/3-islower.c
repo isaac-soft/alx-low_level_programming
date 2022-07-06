@@ -2,7 +2,7 @@
 #include "main.h"
 /**
  * _islower - check for lowercase alphabets
- *@c - unsigned integer
+ *@c: - unsigned integer
  *
  * Return: 1 (sucess) 0 (failure)
  */
