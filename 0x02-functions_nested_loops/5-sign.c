@@ -1,4 +1,4 @@
-#include "main"
+#include "main.h"
 /**
  * print_sign - checks for the sign of a number
  * Description - This program checks if a sign is + or -
