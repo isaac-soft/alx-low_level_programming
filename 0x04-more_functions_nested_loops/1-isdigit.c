@@ -5,7 +5,7 @@
 /**
  * _isdigit -checks for digit
  * @c: parameter to check
- * 
+ *
  * Return: 1 (success) 0 (fail)
  */
 
