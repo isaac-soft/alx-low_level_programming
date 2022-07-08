@@ -6,7 +6,7 @@
  *
  * @a: - 11st parameter
  * @b: -secondparameter
- *Return:t returns the multiplication 
+ *Return:t returns the multiplication
  */
 
 int mul(int a, int b)
