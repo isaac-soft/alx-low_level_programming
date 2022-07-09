@@ -1,9 +1,10 @@
 #include "main.h"
 
 /**
+ * print_diagonal - prints n diagonal
+ * @n: accepts integer
  *
- *
- *
+ * Return: void
  */
 
 void print_diagonal(int n)
