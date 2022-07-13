@@ -4,7 +4,7 @@
 /**
  * _atoi -convert a string to integer
  * @s: parameter
- * Return: the output of atoi() 
+ * Return: the output of atoi()
  */
 
 int _atoi(char *s)
