@@ -8,9 +8,9 @@
  * Return: void
  */
 
-void print_rev(char *s)
+void rev_string(char *s)
 {
-	int i, length;
+	unsigned int i, length;
 	char temp;
 
 	length = strlen(s) - 1;
