@@ -7,6 +7,7 @@
  * @dest: destination variable
  * @src: source variable
  * @n: counter
+ * Return: returns the copied string
  */
 
 char *_strncpy(char *dest, char *src, int n)
