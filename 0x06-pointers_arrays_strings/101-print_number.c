@@ -8,7 +8,7 @@
 
 void print_number(int n)
 {
-	int m;
+	int m, d, count;
 
 	if (n < 0)
 	{
@@ -18,12 +18,15 @@ void print_number(int n)
 	else
 		m = n;
 
-	if (m < 10)
-		_putchar(m % 10 + '0');
-	else if (m >= 10)
+	d = m;
+	count = 1;
+	while (d > 9)
 	{
-		/*_putchar(m % 10 + '0');*/
-		print_number(m / 10);
-		_putchar(m % 10 + '0');
+		d /= 10;
+		count *= 10;
 	}
+	for (; count >= 1; count /= 10)
+	{
+		_putchar(((m / count) % 10) + 48);
+	}	
 }
