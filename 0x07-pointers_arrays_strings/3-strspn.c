@@ -11,14 +11,14 @@
 
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int i,j, checker;
+	unsigned int i, j, checker;
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
 		checker = 0;
 		for (j = 0; accept[j] != '\0'; j++)
 		{
-			if (accept [j] == s[i])
+			if (accept[j] == s[i])
 			{
 				checker = 1;
 				break;
