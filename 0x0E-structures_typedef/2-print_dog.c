@@ -5,7 +5,7 @@
 /**
  * print_dog -print dog details
  * @d: -dog profile
- *
+ * Return: void
  */
 
 void print_dog(struct dog *d)
