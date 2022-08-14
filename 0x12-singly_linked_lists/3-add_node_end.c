@@ -14,7 +14,7 @@ unsigned int str_len(const char *str);
 list_t *add_node_end(list_t **head, const char *str)
 {
 	list_t *new_node, *address;
-       
+ 
 	address = *head;	/* address tracks previous node */;
 
 	if (head == NULL && str == NULL)
