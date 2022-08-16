@@ -1,59 +1,45 @@
 #include "lists.h"
-
 /**
- * insert_nodeint_at_index - inserts new node at a specified index
- * @head: pointer to a linked list
- * @idx: index for new node
- * @n: data of newnode
- *
- * Return: address of new node, NULL (FAIL)
- */
+  * insert_nodeint_at_index - insert new node at a given position
+  * @head: list
+  * @idx: index to add node
+  * @n: new node data
+  * Return: new node
+  */
 
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
-	unsigned int counter;
-	listint_t *temp_node, *new_node;
-	/*(void)temp_node; handling unused variable case */
+	unsigned int i;
+	listint_t *tmp, *new;
 
-	if (*head == NULL)
+	if (head == NULL)
 	{
-		return (NULL);
-}
-
-	new_node = malloc(sizeof(listint_t));
-	if (new_node == NULL)
-	{
-		free(new_node);
 		return (NULL);
 	}
-	new_node->n = n; /* give new_node its data */
-
+	new = malloc(sizeof(listint_t));
+	if (!new)
+	{
+		free(new);
+		return (NULL);
+	}
 	if (idx == 0)
 	{
-		new_node->next = *head;	/*copy head data to temporary */
-		*head = new_node; /* the new_node is prepended and now the head */
-		return (new_node);
+		new->n = n;
+		new->next = *head;
+		*head = new;
+		return (new);
 	}
-
-	else
+	tmp = *head;
+	for (i = 0; i < (idx - 1) && tmp != NULL; i++)
 	{
-		/*copy head data to temporary */
-		temp_node = *head;
-		/* move head to index position */
-		for (counter = 0; counter < (idx - 1); counter++)
-		{
-			if (temp_node == NULL)
-			{
-				free(temp_node);
-				return (NULL);
-			}
-			temp_node = temp_node->next;
-		}
-		/* linke new node to next node */
-		new_node->next = temp_node->next; /* linke new node to next node */
-		/* link previously linked node to new node*/
-		temp_node->next = new_node; /* link previously linked node to new node*/
-		/* free(temp_node);*/
-		return (new_node);
+		tmp = tmp->next;
 	}
+	if (tmp == NULL)
+	{
+		return (NULL);
+	}
+	new->n = n;
+	new->next = tmp->next;
+	tmp->next = new;
+	return (new);
 }
