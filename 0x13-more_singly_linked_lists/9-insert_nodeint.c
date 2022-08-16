@@ -42,7 +42,7 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 		/* move head to index position */
 		for (counter = 0; counter < (idx - 1); counter++)
 		{
-			if (temp_node == NULL || temp_node->next == NULL)
+			if (temp_node == NULL)
 			{
 				free(temp_node);
 				return (NULL);
