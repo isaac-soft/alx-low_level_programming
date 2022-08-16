@@ -11,13 +11,18 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
 	unsigned int x;
 
+	/* loop through the node */
 	for (x = 0; x <= index; x++)
 	{
+		/* this checks for the validity of the head */
+		/* it also takes care of node that does not exist */
 		if (head == NULL)
 			return (NULL);
+
+
 		if (x != index)
 		{
-			head = head->next;
+			head = head->next; /* move to next node */
 		}
 	}
 	return (head);
