@@ -3,7 +3,7 @@
 /**
  * free_listint - frees a linked list of type listint_t
  * @head: pointer to link
- * 
+ *
  * Return: void
  */
 
@@ -20,7 +20,7 @@ void free_listint(listint_t *head)
 		while (head != NULL)
 		{
 			temp_node = head; /*copy pointer location */
-			head=head->next; /*move to next node */
+			head = head->next; /*move to next node */
 			free(temp_node); /*free current locatin */
 		}
 		free(head);
