@@ -13,7 +13,7 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
 	unsigned int counter;
 	listint_t *temp_node, *new_node;
-	(void)temp_node; /*handling unused variable case */
+	/*(void)temp_node; handling unused variable case */
 
 	if (*head == NULL)
 	{
