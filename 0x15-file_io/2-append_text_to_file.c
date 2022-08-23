@@ -6,7 +6,7 @@
  * @text_content: The string to add to the end of the file.
  *
  * Return: (1) On success, text_content exist
- * 	   (-1) On failure, NULL filename, text_content does not exist
+ * (-1) On failure, NULL filename, text_content does not exist
  *		text_content does not have write permision.
  */
 int append_text_to_file(const char *filename, char *text_content)
